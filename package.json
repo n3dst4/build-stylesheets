@@ -1,6 +1,6 @@
 {
   "name": "@n3dst4/build-stylesheets",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "__build/build-stylesheets.js",
   "scripts": {
