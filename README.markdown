@@ -20,7 +20,7 @@ buildStylesheets(assetOptions, production)
 ```
 import buildStylesheets from "@n3dst4/build-stylesheets"
 const production = process.env.NODE_ENV === "production"
-gulp.src("").
+gulp.src(path.join("stylesheets", "main.less")).
    pipe(buildStylesheets({
          src: "stylesheets",
          dest: "__generated/css/assets",
