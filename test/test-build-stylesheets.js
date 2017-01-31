@@ -70,7 +70,7 @@ describe("@n3dst4/build-stylesheets", function () {
     expect(this.code).to.match(/foo bar {\n\s*color: red;\n\s*}\n\n\s*foo baz {\n\s*color: green;\n\s*}\n\n\s*poot {\n\s*background-image: url\(assets\/image-[A-Za-z0-9]+.jpg\);\n\s*}/)
   })
 
-  it("should copy assets into the outopunt folder", function (done) {
+  it("should copy assets into the output folder", function (done) {
     const assets = []
     fsExtra.walk(path.join(this.path, "assets")).
       on("data", (item) => {assets.push(item)}).
