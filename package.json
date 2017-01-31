@@ -17,6 +17,7 @@
     "gulp-less": "^3.1.0",
     "gulp-plumber": "^1.1.0",
     "gulp-rework": "^1.2.0",
+    "less-plugin-npm-import": "^2.1.0",
     "multipipe": "^0.3.0",
     "rework-assets": "^1.1.1"
   },
