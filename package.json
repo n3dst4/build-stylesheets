@@ -4,9 +4,11 @@
   "description": "",
   "main": "__build/build-stylesheets.js",
   "scripts": {
+    "build": "babel src --out-dir __build --source-maps inline",
+    "prepublish": "npm run build",
     "test": "mocha",
-    "prepublish": "babel src --out-dir __build --source-maps inline",
-    "watch": "mocha --watch"
+    "watch-build": "npm run build -- --watch",
+    "watch-test": "npm run test -- --watch"
   },
   "author": "Neil de Carteret <git@lumphammer.com>",
   "license": "ISC",
